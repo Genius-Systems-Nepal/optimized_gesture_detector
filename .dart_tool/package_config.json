@@ -131,10 +131,10 @@
       "name": "optimized_gesture_detector",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-07-21T05:20:01.507345Z",
+  "generated": "2023-07-07T10:52:23.364119Z",
   "generator": "pub",
   "generatorVersion": "2.17.0"
 }
