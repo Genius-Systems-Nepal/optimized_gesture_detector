@@ -6,7 +6,7 @@ publish_to: none
 # homepage: https://github.com/SunPointed/OptimizedGestureDetector
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.19.0 <3.0.0'
   flutter: ">1.21.0"
 
 dependencies:

@@ -8,8 +8,7 @@ typedef GestureScaleStartCallback = void Function(OpsSStartDetails details);
 
 /// Signature for when the pointers in contact with the screen have indicated a
 /// new focal point and/or scale.
-typedef GestureScaleUpdateCallback = void Function(
-    OpsSUpdateDetails details);
+typedef GestureScaleUpdateCallback = void Function(OpsSUpdateDetails details);
 
 /// Signature for when the pointers are no longer in contact with the screen.
 typedef GestureScaleEndCallback = void Function(OpsSEndDetails details);
@@ -161,7 +160,12 @@ class OpsScaleGestureRecognizer extends OneSequenceGestureRecognizer {
   OpsScaleGestureRecognizer({
     Object? debugOwner,
     PointerDeviceKind? kind,
-  }) : super(debugOwner: debugOwner, kind: kind);
+  }) : super(
+          debugOwner: debugOwner,
+          supportedDevices: <PointerDeviceKind>{
+            kind ?? PointerDeviceKind.values[0]
+          },
+        );
 
   /// The pointers in contact with the screen have established a focal point and
   /// initial scale of 1.0.
